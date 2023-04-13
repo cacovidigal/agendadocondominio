@@ -12,13 +12,13 @@
     <title>Condominio</title>
 </head>
 <body>
-    <div>
+    <div class="titulo_site">
         <h1>Gestão do Condomínio</h1>
     </div>
     <div class="agenda">
         
         <table>
-            <caption>Agenda de atividades do Condomínio</caption>
+            <caption>Acompanhamento de atividades do Condomínio</caption>
             <thead>
                 <tr>
                     <th>Atividades</th>
@@ -30,25 +30,51 @@
 
             <tbody>
                 <tr>
-                    <td>John Lennon</td>
-                    <td>Rhythm Guitar</td>
+                    <td>descrição da atividade</td>
+                    <td>anotar inicio</td>
+                    <td>anotar fim</td>
+                    <td>anotar resultado atual</td>
                   </tr>
                   <tr>
-                    <td>Paul McCartney</td>
-                    <td>Bass</td>
+                    <td>descrição da atividade</td>
+                    <td>anotar inicio</td>
+                    <td>anotar fim</td>
+                    <td>anotar resultado atual</td>
                   </tr>
                   <tr>
-                    <td>George Harrison</td>
-                    <td>Lead Guitar</td>
+                    <td>descrição da atividade</td>
+                    <td>anotar inicio</td>
+                    <td>anotar fim</td>
+                    <td>anotar resultado atual</td>
                   </tr>
                   <tr>
-                    <td>Ringo Starr</td>
-                    <td>Drums</td>
+                    <td>descrição da atividade</td>
+                    <td>anotar inicio</td>
+                    <td>anotar fim</td>
+                    <td>anotar resultado atual</td>
                   </tr>
             </tbody>
         </table>
         
     </div>
+
+    <form name="adicione_atividade">
+
+        <h1>Adicione atividade</h1>
+      
+        <input type="text" id="atividadeid" placeholder="Atividade" required="required" name="atividade" />
+        <label for="atividade">atividade</label>
+      
+        <input type="date" id="dataInicioid" placeholder="DD/MM/AAAA" name="dataInicio" />
+        <label for="dataInicio">Data de inicio</label>
+      
+        <input type="date" id="dataFimid" placeholder="DD/MM/AAAA" name="dataFim" />
+        <label for="dataFim">Data da Conclusão</label>
+      
+        <textarea placeholder="Status"></textarea>
+      
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+      </form>
    
 
     <footer>
